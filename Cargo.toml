@@ -1,0 +1,21 @@
+[package]
+name = "solana_helloworld"
+version = "0.1.0"
+edition = "2021"
+license = "WTFPL"
+publish = false
+
+[dependencies]
+solana-program = "=1.10.21"
+borsh = "0.9.3"
+borsh-derive = "0.9.1"
+
+[features]
+test-bpf = []
+
+[dev-dependencies]
+solana-program-test = "=1.10.21"
+solana-sdk = "=1.10.21"
+
+[lib]
+crate-type = ["cdylib", "lib"]
